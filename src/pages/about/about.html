@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Add Catch
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+  <ion-item>
+    <ion-label floating>Anglers Name</ion-label>
+    <ion-input type="text" [(ngModel)]="catch.anglers_name" name="anglers_name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Fishing Method</ion-label>
+    <ion-input type="text" [(ngModel)]="catch.fishing_method" name="fishing_method"></ion-input>
+  </ion-item>
+
+   <ion-item>
+    <ion-label floating>Breed of the Fish</ion-label>
+    <ion-input type="text" [(ngModel)]="catch.breed" name="breed"></ion-input>
+  </ion-item>
+
+   <ion-item>
+    <ion-label floating>Lenght of the Fish</ion-label>
+    <ion-input type="number"[(ngModel)]="catch.length" name="length"></ion-input>
+  </ion-item> 
+
+   <ion-item>
+    <ion-label floating>Weight of the Fish</ion-label>
+    <ion-input type="number" [(ngModel)]="catch.weight" name="weight"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <button ion-button (click)="sendLog();">Send Info</button>
+  </ion-item>
+</ion-list>
+
+</ion-content>

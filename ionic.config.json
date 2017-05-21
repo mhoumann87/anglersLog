@@ -1,0 +1,12 @@
+{
+  "name": "anglersLog",
+  "app_id": "",
+  "v2": true,
+  "typescript": true,
+ "proxies": [
+   {
+     "path": "/api",
+     "proxyUrl": "http://api.evang.dk/v1"
+   }
+ ]
+}
